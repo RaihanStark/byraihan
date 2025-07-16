@@ -6,7 +6,6 @@ import {
   TweetSkeleton,
   type TweetProps,
 } from "react-tweet";
-import redis from "@/app/redis";
 import { Caption } from "./caption";
 import "./tweet.css";
 
@@ -15,31 +14,23 @@ interface TweetArgs {
   caption: ReactNode;
 }
 
-async function getAndCacheTweet(id: string): Promise<Tweet | undefined> {
-  // we first prioritize getting a fresh tweet
+async function getTweetData(id: string): Promise<Tweet | undefined> {
   try {
     const tweet = await getTweet(id);
 
     // @ts-ignore
     if (tweet && !tweet.tombstone) {
-      // we populate the cache if we have a fresh tweet
-      await redis.set(`tweet:${id}`, tweet);
       return tweet;
     }
   } catch (error) {
     console.error("tweet fetch error", error);
   }
 
-  const cachedTweet: Tweet | null = await redis.get(`tweet:${id}`);
-
-  // @ts-ignore
-  if (!cachedTweet || cachedTweet.tombstone) return undefined;
-
-  return cachedTweet;
+  return undefined;
 }
 
 const TweetContent = async ({ id, components }: TweetProps) => {
-  const tweet = id ? await getAndCacheTweet(id) : undefined;
+  const tweet = id ? await getTweetData(id) : undefined;
 
   if (!tweet) {
     return <TweetNotFound />;
