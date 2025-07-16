@@ -23,7 +23,7 @@ export function Posts({ posts: initialPosts }) {
         <header className="text-gray-500 dark:text-gray-600 flex items-center text-xs">
           <button
             onClick={sortDate}
-            className={`w-12 h-9 text-left  ${
+            className={`w-24 h-9 text-left  ${
               sort[1] !== "desc"
                 ? "text-gray-700 dark:text-gray-400"
                 : ""
@@ -54,29 +54,29 @@ function List({ posts, sort }) {
   return (
     <ul>
       {sortedPosts.map((post, i: number) => {
-        const year = getYear(post.date);
-        const firstOfYear =
-          !sortedPosts[i - 1] || getYear(sortedPosts[i - 1].date) !== year;
-        const lastOfYear =
-          !sortedPosts[i + 1] || getYear(sortedPosts[i + 1].date) !== year;
+        const date = getDate(post.date);
+        const firstOfDate =
+          !sortedPosts[i - 1] || getDate(sortedPosts[i - 1].date) !== date;
+        const lastOfDate =
+          !sortedPosts[i + 1] || getDate(sortedPosts[i + 1].date) !== date;
 
         return (
           <li key={post.id}>
             <Link href={`/post/${new Date(post.date).getFullYear()}/${post.id}`}>
               <span
                 className={`flex transition-[background-color] hover:bg-gray-100 dark:hover:bg-[#242424] active:bg-gray-200 dark:active:bg-[#222] border-y border-gray-200 dark:border-[#313131]
-                ${!firstOfYear ? "border-t-0" : ""}
-                ${lastOfYear ? "border-b-0" : ""}
+                ${!firstOfDate ? "border-t-0" : ""}
+                ${lastOfDate ? "border-b-0" : ""}
               `}
               >
                 <span
                   className={`py-3 flex grow items-center ${
-                    !firstOfYear ? "ml-14" : ""
+                    !firstOfDate ? "ml-20" : ""
                   }`}
                 >
-                  {firstOfYear && (
-                    <span className="w-14 inline-block self-start shrink-0 text-gray-500 dark:text-gray-500">
-                      {year}
+                  {firstOfDate && (
+                    <span className="pr-5 inline-block self-start shrink-0 text-gray-500 dark:text-gray-500">
+                      {date}
                     </span>
                   )}
 
@@ -91,6 +91,6 @@ function List({ posts, sort }) {
   );
 }
 
-function getYear(date: string) {
-  return new Date(date).getFullYear();
+function getDate(date: string) {
+  return new Date(date).toISOString().split('T')[0];
 }
