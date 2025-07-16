@@ -67,7 +67,7 @@ export async function GET(_req: Request, props) {
             tw="mt-5 flex text-3xl text-gray-500"
             style={font("Roboto Mono 400")}
           >
-            {post.date} – {post.viewsFormatted} views
+            {post.date}
           </div>
         </main>
       </div>

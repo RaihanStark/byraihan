@@ -43,7 +43,7 @@ export function Posts({ posts: initialPosts }) {
 
 function List({ posts, sort }) {
   const sortedPosts = useMemo(() => {
-    const [sortKey, sortDirection] = sort;
+    const [, sortDirection] = sort;
     return [...posts].sort((a, b) => {
       return sortDirection === "desc"
         ? new Date(b.date).getTime() - new Date(a.date).getTime()
