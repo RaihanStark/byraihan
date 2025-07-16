@@ -31,6 +31,12 @@ module.exports = withMDX({
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "dev-to-uploads.s3.amazonaws.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   headers() {

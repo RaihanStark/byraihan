@@ -25,13 +25,7 @@ export function Header({ posts }: { posts: Post[] }) {
         <span className="flex-grow">
           <span className="hidden md:inline">
             <span>
-              <a
-                href="https://twitter.com/rauchg"
-                className="hover:text-gray-800 dark:hover:text-gray-400"
-                target="_blank"
-              >
-                @rauchg
-              </a>
+                Raihan Yudo Saputra
             </span>
 
             <span className="mx-2">|</span>
