@@ -4,14 +4,32 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { Certification } from "../get-certifications";
 
+const getImportanceBadge = (importance: number) => {
+  switch (importance) {
+    case 1:
+      return "🥇";
+    case 2:
+      return "🥈";
+    case 3:
+      return "🥉";
+    default:
+      return "🏅";
+  }
+};
+
 const sortCertifications = (
   certifications: Certification[],
+  sortBy: "importance" | "date",
   ascending: boolean
 ) => {
   return certifications.sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
-    return ascending ? dateA - dateB : dateB - dateA;
+    if (sortBy === "importance") {
+      return ascending ? a.importance - b.importance : b.importance - a.importance;
+    } else {
+      const dateA = new Date(a.date).getTime();
+      const dateB = new Date(b.date).getTime();
+      return ascending ? dateA - dateB : dateB - dateA;
+    }
   });
 };
 
@@ -20,15 +38,25 @@ type CertificationsListProps = {
 };
 
 export function CertificationsList({ certifications }: CertificationsListProps) {
-  const [isAscending, setIsAscending] = useState(false);
+  const [sortBy, setSortBy] = useState<"importance" | "date">("importance");
+  const [isAscending, setIsAscending] = useState(true);
 
   const sortedCertifications = useMemo(
-    () => sortCertifications([...certifications], isAscending),
-    [certifications, isAscending]
+    () => sortCertifications([...certifications], sortBy, isAscending),
+    [certifications, sortBy, isAscending]
   );
 
   const toggleSort = () => {
     setIsAscending((prev) => !prev);
+  };
+
+  const changeSortBy = (newSortBy: "importance" | "date") => {
+    if (newSortBy === sortBy) {
+      toggleSort();
+    } else {
+      setSortBy(newSortBy);
+      setIsAscending(newSortBy === "importance");
+    }
   };
 
   return (
@@ -37,12 +65,28 @@ export function CertificationsList({ certifications }: CertificationsListProps) 
         <span className="text-sm text-gray-600 dark:text-gray-400">
           {certifications.length} certification{certifications.length !== 1 ? "s" : ""}
         </span>
-        <button
-          onClick={toggleSort}
-          className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-        >
-          Sort by date {isAscending ? "↑" : "↓"}
-        </button>
+        <div className="flex gap-2">
+          <button
+            onClick={() => changeSortBy("importance")}
+            className={`text-sm px-2 py-1 rounded transition-colors ${
+              sortBy === "importance"
+                ? "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+                : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+            }`}
+          >
+            Importance {sortBy === "importance" && (isAscending ? "↑" : "↓")}
+          </button>
+          <button
+            onClick={() => changeSortBy("date")}
+            className={`text-sm px-2 py-1 rounded transition-colors ${
+              sortBy === "date"
+                ? "bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+                : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+            }`}
+          >
+            Date {sortBy === "date" && (isAscending ? "↑" : "↓")}
+          </button>
+        </div>
       </div>
 
       <div className="space-y-3">
@@ -53,6 +97,9 @@ export function CertificationsList({ certifications }: CertificationsListProps) 
             className="block group"
           >
             <div className="flex items-start gap-4 p-4 -mx-4 hover:bg-gray-50 dark:hover:bg-gray-900/50 rounded-lg transition-colors">
+              <div className="text-2xl" aria-label={`Importance rank ${cert.importance}`}>
+                {getImportanceBadge(cert.importance)}
+              </div>
               <div className="flex-1">
                 <h3 className="font-medium text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {cert.title}

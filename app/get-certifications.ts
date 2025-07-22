@@ -8,9 +8,10 @@ export type Certification = {
   year: string;
   credentialId: string;
   verificationUrl: string;
-  description: string;
+  description?: string;
   skills: string[];
   image: string;
+  importance: number;
 };
 
 export async function getCertifications() {
