@@ -1,0 +1,18 @@
+[
+  {
+    "id": "master-sql",
+    "title": "Master SQL",
+    "instructor": "Instructor",
+    "platform": "roadmap.sh",
+    "progress": 10,
+    "topics": ["SQL", "Database"]
+  },
+  {
+    "id": "basic-go",
+    "title": "Basics of Go",
+    "instructor": "Maximiliano Firtman",
+    "platform": "Frontend Masters",
+    "progress": 45,
+    "topics": ["Go", "Programming"]
+  }
+]
