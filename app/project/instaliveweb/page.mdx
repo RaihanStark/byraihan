@@ -1,0 +1,118 @@
+import Image from "next/image";
+import { A } from "@/app/post/components/a";
+import { H2 } from "@/app/post/components/h2";
+import { H3 } from "@/app/post/components/h3";
+import { P } from "@/app/post/components/p";
+import { UL } from "@/app/post/components/ul";
+import { LI } from "@/app/post/components/li";
+
+export const metadata = {
+  title: "InstaLiveWeb: Instagram Live Dashboard",
+  description: "An Instagram Live Third-Party Platform to provides you with a RTMP server and stream key for streaming using software like OBS-Studio.",
+};
+
+# InstaLiveWeb: Instagram Live Dashboard
+
+<div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+  <time dateTime="2020-06-01">June 2020</time>
+  <span className="text-gray-300 dark:text-gray-600">•</span>
+  <span>Client: PT Ajita Indonesia</span>
+</div>
+
+<div className="mb-8">
+  <Image
+    src="/images/projects/instaliveweb/instaliveweb.png"
+    alt="InstaLiveWeb Dashboard"
+    width={1200}
+    height={675}
+    className="rounded-lg"
+    priority
+  />
+</div>
+
+## Introduction
+
+An Instagram Live Third-Party Platform to provides you with a RTMP server and stream key for streaming using software like OBS-Studio.
+
+## Problems
+
+Instagram did not provide RTMP for user to stream outside Instagram Client. This limitation prevented content creators from:
+- Using professional streaming software
+- Streaming from desktop computers
+- Utilizing advanced streaming features like overlays, multiple cameras, and screen sharing
+- Managing live comments and viewers from a central dashboard
+
+## Solution
+
+We reverse engineered the Instagram API to get the RTMP from the Instagram Server, and we created a dashboard for it so user can easily use and manage it. This solution enables professional content creators to leverage their existing streaming setup while reaching their Instagram audience.
+
+## Key Features
+
+### Streaming Capabilities
+- **RTMP Server Generation**: Automatically generates RTMP server URL and stream key
+- **OBS Integration**: Seamless integration with OBS-Studio and other streaming software
+- **Broadcast Control**: Start and stop broadcasts directly from the dashboard
+
+### Live Management
+- **Live Comments**: Real-time display of viewer comments
+- **Live Viewers**: Track current viewer count and engagement
+- **Instagram Login**: Secure authentication with your Instagram account
+- **OTP Handler**: Automatic handling of Instagram's two-factor authentication
+
+### User Experience
+- **Intuitive Dashboard**: Clean and easy-to-use interface
+- **Real-time Updates**: Live updates for comments and viewer metrics
+- **Responsive Design**: Works on desktop and mobile devices
+
+## Technology Stack
+
+### Backend
+- **Python** - Core programming language
+- **Flask** - Web framework
+- **Flask-WTF** - Form handling and validation
+- **Flask-Session** - Session management
+
+### Frontend
+- **JavaScript** - Client-side functionality
+- **HTML/SCSS** - Markup and styling
+- **jQuery** - DOM manipulation
+- **Ajax** - Asynchronous requests
+
+### Infrastructure
+- **Heroku** - Cloud hosting platform
+- **Instagram Private API** - Reverse-engineered Instagram endpoints
+
+## Technical Implementation
+
+The project involved several technical challenges:
+
+1. **API Reverse Engineering**: Carefully analyzing Instagram's private API to understand RTMP stream generation
+2. **Authentication Flow**: Implementing secure Instagram login with OTP support
+3. **Real-time Communication**: Building WebSocket connections for live comments and viewer updates
+4. **Stream Management**: Handling RTMP server allocation and stream lifecycle
+
+## Screenshots
+
+<div className="space-y-8 mb-8">
+  <div>
+    <h3 className="text-lg font-semibold mb-2">Dashboard Interface</h3>
+    <Image
+      src="/images/projects/instaliveweb/instaliveweb-2.png"
+      alt="InstaLiveWeb Dashboard Interface"
+      width={1200}
+      height={675}
+      className="rounded-lg"
+    />
+  </div>
+</div>
+
+## Impact
+
+InstaLiveWeb revolutionized how content creators stream to Instagram by:
+
+- Enabling professional-quality streams with advanced software features
+- Providing better engagement tools through the live comment dashboard
+- Allowing desktop streaming for the first time
+- Supporting multi-camera and screen sharing capabilities
+
+The platform served thousands of content creators who wanted to elevate their Instagram Live experience beyond mobile-only limitations.

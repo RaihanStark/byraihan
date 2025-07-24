@@ -39,6 +39,23 @@
       "featured": true
     },
     {
+      "id": "instaliveweb",
+      "title": "InstaLiveWeb: Instagram Live Dashboard",
+      "description": "An Instagram Live Third-Party Platform to provides you with a RTMP server and stream key for streaming using software like OBS-Studio.",
+      "thumbnail": "/images/projects/instaliveweb/instaliveweb.png",
+      "image": "/images/projects/instaliveweb/instaliveweb.png",
+      "date": "2020-06-01",
+      "tags": ["python", "flask", "instagram", "api", "streaming"],
+      "technologies": [
+        "Python", "JavaScript", "HTML/SCSS", "jQuery", "Ajax",
+        "Flask", "Flask-WTF", "Flask-Session", "Heroku"
+      ],
+      "client": "PT Ajita Indonesia",
+      "link": "",
+      "demo": "",
+      "hasCustomPage": true
+    },
+    {
       "id": "example-project-1",
       "title": "Example Project 1",
       "description": "This is a sample project to demonstrate the projects page functionality",
