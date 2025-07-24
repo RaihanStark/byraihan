@@ -98,6 +98,22 @@
       "client": "Personal Project",
       "link": "https://github.com/RaihanStark/movflix",
       "demo": "https://movflix.byraihan.com"
+    },
+    {
+      "id": "youraibase",
+      "title": "YourAIBase: AI Tools Aggregation",
+      "description": "A simple AI web aggregator platform to help users discover and explore AI solutions.",
+      "thumbnail": "/images/projects/youraibase/youraibase.png",
+      "image": "/images/projects/youraibase/youraibase.png",
+      "date": "2024-02-29",
+      "tags": ["web", "ai", "aggregator", "saas", "database"],
+      "technologies": [
+        "Web Development", "Database Design", "AI Solutions Aggregation"
+      ],
+      "client": "YourAIBase",
+      "link": "",
+      "demo": "",
+      "featured": false
     }
   ]
 }
