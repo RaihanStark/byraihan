@@ -42,20 +42,20 @@ export function ProjectsList({ projects }: { projects: Project[] }) {
             href={`/project/${project.id}`}
             className="group block"
           >
-            <article className="flex gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-gray-300 dark:hover:border-gray-600 transition-colors">
-              <div className="w-32 h-24 relative bg-gray-100 dark:bg-gray-800 rounded overflow-hidden flex-shrink-0">
+            <article className="flex flex-col sm:flex-row gap-3 sm:gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-gray-300 dark:hover:border-gray-600 transition-colors">
+              <div className="w-full sm:w-32 h-48 sm:h-24 relative bg-gray-100 dark:bg-gray-800 rounded overflow-hidden flex-shrink-0">
                 {project.thumbnail && project.thumbnail !== "" ? (
                   <Image
                     src={project.thumbnail}
                     alt={project.title}
                     fill
                     className="object-cover"
-                    sizes="128px"
+                    sizes="(max-width: 640px) 100vw, 128px"
                   />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <svg
-                      className="w-12 h-12 text-gray-400"
+                      className="w-16 sm:w-12 h-16 sm:h-12 text-gray-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -72,21 +72,21 @@ export function ProjectsList({ projects }: { projects: Project[] }) {
                 )}
               </div>
               <div className="flex-1 min-w-0">
-                <h2 className="text-lg font-semibold mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 dark:text-gray-100">
+                <h2 className="text-lg font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 dark:text-gray-100">
                   {project.title}
                 </h2>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2 line-clamp-2">
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
                   {project.description}
                 </p>
-                <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-500">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-gray-500 dark:text-gray-500">
                   <time dateTime={project.date}>
                     {new Date(project.date).toLocaleDateString()}
                   </time>
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-1.5">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded"
+                        className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded text-xs"
                       >
                         {tag}
                       </span>

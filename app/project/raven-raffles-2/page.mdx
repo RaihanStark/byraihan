@@ -1,0 +1,109 @@
+import Image from "next/image";
+import { A } from "@/app/post/components/a";
+import { H2 } from "@/app/post/components/h2";
+import { H3 } from "@/app/post/components/h3";
+import { P } from "@/app/post/components/p";
+import { UL } from "@/app/post/components/ul";
+import { LI } from "@/app/post/components/li";
+
+export const metadata = {
+  title: "Raven Raffles 2.0: SaaS Web Application",
+  description: "Software as a service (SaaS) Web Application for users that want to participate in sneakers raffles in bulk to get the higher chances of winning.",
+};
+
+# Raven Raffles 2.0: SaaS Web Application
+
+<div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+  <time dateTime="2019-06-01">June 2019</time>
+  <span className="text-gray-300 dark:text-gray-600">•</span>
+  <span>Client: Raven Restocks</span>
+</div>
+
+<div className="mb-8">
+  <Image
+    src="/images/projects/raven-raffles-2/raven.png"
+    alt="Raven Raffles Dashboard"
+    width={1200}
+    height={675}
+    className="rounded-lg"
+    priority
+  />
+</div>
+
+## Introduction
+
+Raven Raffles is a product of Raven Restocks. I was the one in charge to develop it from ground up to production.
+They gave me privilege to choose any technology to build as long as with Python, and They also provided me with complete UI/UX design.
+
+## Problem
+
+Sneakers Brands and Distributors usually has Raffle Competition, where people gather and join the (sort of) giveaway where they will pick people randomly for a sneakers with a retail price.
+
+Why people really want it? Because we could resell the sneakers with a BIG margin of profit, and sneakers has its own market - people will buy it.
+
+## Solution
+
+Because it is VERY hard to win raffle. In order to win this Raffle, or at least have advantages on chances to win than others. We could join multiple times with multiple identity, payment methods, and etc.
+
+We provide BOT to automatically join any raffles and have GREATER chances of winning than others.
+
+## Technology Used
+
+### Backend Technologies
+- **Python** - Core programming language
+- **Flask/Django** - Web frameworks for building the application
+- **SQLAlchemy** - ORM for database management
+- **PostgreSQL** - Production database
+- **SQLite** - Testing database
+- **Redis** - Task queue management
+
+### Frontend Technologies
+- **JavaScript** - Client-side scripting
+- **jQuery Ajax** - Asynchronous requests and DOM manipulation
+
+### Automation & Integration
+- **Requests** - HTTP library for API interactions
+- **Selenium** - Web automation for raffle entries
+- **HTTP Session & Cookie Manipulation** - Managing multiple identities
+- **Discord Webhooks** - Real-time notifications
+- **REST API** - Service integration
+
+### Infrastructure & DevOps
+- **Heroku** - Cloud platform hosting
+- **NginX** - Web server and reverse proxy
+- **Gunicorn** - Python WSGI HTTP Server
+- **Honcho** - Process management
+- **Sentry** - Error monitoring and tracking
+
+## Key Features
+
+- **Bulk Raffle Entry**: Automatically enter multiple raffles with different identities
+- **Identity Management**: Handle multiple profiles with different payment methods
+- **Real-time Monitoring**: Track raffle status and success rates
+- **Discord Integration**: Instant notifications for wins and updates
+- **Error Handling**: Robust error tracking with Sentry integration
+- **Scalable Architecture**: Built to handle thousands of concurrent entries
+
+## Other Images
+
+<div className="space-y-8 mb-8">
+  <Image
+    src="/images/projects/raven-raffles-2/raven-2.png"
+    alt="Raven Raffles Interface"
+    width={1200}
+    height={675}
+    className="rounded-lg"
+  />
+  
+  <Image
+    src="/images/projects/raven-raffles-2/raven-3.png"
+    alt="Raven Raffles Dashboard View"
+    width={1200}
+    height={675}
+    className="rounded-lg"
+  />
+</div>
+
+## Impact
+
+This project significantly increased the success rate of winning sneaker raffles for users, providing them with a competitive edge in the highly competitive sneaker resale market. The automated system could handle hundreds of entries simultaneously while maintaining stability and reliability.

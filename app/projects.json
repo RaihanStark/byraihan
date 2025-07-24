@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "id": "raven-raffles-2",
+      "title": "Raven Raffles 2.0: SaaS Web Application",
+      "description": "Software as a service (SaaS) Web Application for users that want to participate in sneakers raffles in bulk to get the higher chances of winning.",
+      "thumbnail": "/images/projects/raven-raffles-2/raven.png",
+      "image": "/images/projects/raven-raffles-2/raven.png",
+      "date": "2019-06-01",
+      "tags": ["python", "flask", "django", "saas", "web"],
+      "technologies": [
+        "Python", "Javascript", "Flask/Django", "jQuery Ajax",
+        "Requests", "Selenium", "Discord Webhooks", "REST API",
+        "Sentry", "Heroku", "NginX", "Gunicorn", "Honcho",
+        "SQLAlchemy", "PostgreSQL", "SQLite", "Redis"
+      ],
+      "client": "Raven Restocks",
+      "link": "",
+      "demo": "",
+      "hasCustomPage": true
+    },
+    {
       "id": "example-project-1",
       "title": "Example Project 1",
       "description": "This is a sample project to demonstrate the projects page functionality",

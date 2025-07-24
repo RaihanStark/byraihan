@@ -10,6 +10,9 @@ export type Project = {
   tags: string[];
   link?: string;
   demo?: string;
+  technologies?: string[];
+  client?: string;
+  hasCustomPage?: boolean;
 };
 
 export const getProjects = async () => {
