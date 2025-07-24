@@ -1,0 +1,90 @@
+import Image from "next/image";
+import { A } from "@/app/post/components/a";
+import { H2 } from "@/app/post/components/h2";
+import { H3 } from "@/app/post/components/h3";
+import { P } from "@/app/post/components/p";
+import { UL } from "@/app/post/components/ul";
+import { LI } from "@/app/post/components/li";
+
+export const metadata = {
+  title: "Explore APOD",
+  description: "A React application for exploring astronomical pictures from NASA's APOD API. Features current APOD viewing, HD downloads, explanations, and random picture exploration.",
+};
+
+# Explore APOD
+
+<div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+  <time dateTime="2022-01-10">January 10, 2022</time>
+  <span className="text-gray-300 dark:text-gray-600">•</span>
+  <span>Personal Project</span>
+  <span className="text-gray-300 dark:text-gray-600">•</span>
+  <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded text-xs font-medium">Open Source</span>
+</div>
+
+<div className="mb-8">
+  <Image
+    src="/images/projects/explore-apod/explore-apod.png"
+    alt="Explore APOD Application"
+    width={1200}
+    height={675}
+    className="rounded-lg"
+    priority
+  />
+</div>
+
+## Introduction
+
+Explore APOD is a client-side React application that brings the wonders of space to your fingertips through NASA's Astronomy Picture of the Day (APOD) API. This open-source project allows space enthusiasts to discover and explore stunning astronomical imagery with detailed scientific explanations.
+
+## Motivation
+
+As someone fascinated by astronomy and space exploration, I wanted to create an intuitive interface for accessing NASA's incredible APOD archive. The official NASA website is great, but I envisioned a more modern, interactive experience that would make exploring space photography more engaging and accessible.
+
+## Key Features
+
+### Current APOD Display
+- Shows today's Astronomy Picture of the Day
+- Displays high-resolution space imagery
+- Includes detailed scientific explanations
+- Shows photographer/source credits
+- Displays the date and title
+
+### HD Image Downloads
+- One-click download of high-definition images
+- Preserves original image quality
+- Proper filename formatting with date and title
+- Support for various image formats
+
+### Random Picture Explorer
+- "Surprise Me" feature to discover random APODs
+- Journey through decades of astronomical photography
+- Each random selection includes full details
+- Perfect for space exploration discovery
+
+### Additional Features
+- Responsive design for all devices
+- Fast client-side rendering
+- Minimal and clean UI
+- Dark mode optimized for astronomy viewing
+
+## Technology Stack
+
+### Core Technologies
+- **React** - Component-based UI library
+- **JavaScript (ES6+)** - Modern JavaScript features
+- **NASA APOD API** - Official NASA data source
+
+## Learning Outcomes
+
+This project enhanced my skills in:
+- Working with third-party APIs
+- React performance optimization
+- Responsive design implementation
+- Open source project management
+
+## Live Demo & Source
+
+- **Live Demo**: [apod.byraihan.com](https://apod.byraihan.com)
+- **Source Code**: [github.com/RaihanStark/explore-apod](https://github.com/RaihanStark/explore-apod)
+
+Feel free to explore the cosmos through this application and contribute to making space exploration more accessible to everyone!

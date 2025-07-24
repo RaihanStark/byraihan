@@ -67,6 +67,21 @@
       "client": "PT Ajita Indonesia",
       "link": "",
       "demo": ""
+    },
+    {
+      "id": "explore-apod",
+      "title": "Explore APOD",
+      "description": "A React application for exploring astronomical pictures from NASA's APOD API. Features current APOD viewing, HD downloads, explanations, and random picture exploration.",
+      "thumbnail": "/images/projects/explore-apod/explore-apod.png",
+      "image": "/images/projects/explore-apod/explore-apod.png",
+      "date": "2022-01-10",
+      "tags": ["react", "javascript", "nasa", "api", "open-source"],
+      "technologies": [
+        "React", "JavaScript", "NASA APOD API", "CSS3", "HTML5"
+      ],
+      "client": "Personal Project",
+      "link": "https://github.com/RaihanStark/explore-apod",
+      "demo": "https://apod.byraihan.com"
     }
   ]
 }
