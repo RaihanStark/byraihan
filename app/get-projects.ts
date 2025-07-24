@@ -13,6 +13,7 @@ export type Project = {
   technologies?: string[];
   client?: string;
   hasCustomPage?: boolean;
+  featured?: boolean;
 };
 
 export const getProjects = async () => {

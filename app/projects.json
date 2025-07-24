@@ -20,6 +20,25 @@
       "hasCustomPage": true
     },
     {
+      "id": "local-caddie",
+      "title": "Local Caddie: Caddie Booking Application",
+      "description": "An AirBnB-like web application for booking caddie with ease for your golfing needs and booking management for golf course",
+      "thumbnail": "/images/projects/local-caddie/caddie.png",
+      "image": "/images/projects/local-caddie/caddie.png",
+      "date": "2023-07-01",
+      "tags": ["typescript", "react", "nextjs", "strapi", "stripe"],
+      "technologies": [
+        "TypeScript", "React JS", "Next.js 13+", "Axios", 
+        "Material UI", "Tailwind CSS", "Strapi JS", "PostgreSQL",
+        "Stripe API", "Heroku", "AWS S3", "Full Calendar"
+      ],
+      "client": "Local Caddie",
+      "link": "",
+      "demo": "",
+      "hasCustomPage": true,
+      "featured": true
+    },
+    {
       "id": "example-project-1",
       "title": "Example Project 1",
       "description": "This is a sample project to demonstrate the projects page functionality",
