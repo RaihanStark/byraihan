@@ -82,6 +82,22 @@
       "client": "Personal Project",
       "link": "https://github.com/RaihanStark/explore-apod",
       "demo": "https://apod.byraihan.com"
+    },
+    {
+      "id": "movflix",
+      "title": "MovFlix: Movie & TV Series Catalog",
+      "description": "A Web Application for showing a Movie & TV Series with The Movie Database API (TMDB)",
+      "thumbnail": "/images/projects/movflix/movflix.png",
+      "image": "/images/projects/movflix/movflix.png",
+      "date": "2022-06-01",
+      "tags": ["react", "tmdb", "api", "movies", "open-source"],
+      "technologies": [
+        "JavaScript", "React JS", "Axios", "Material UI", 
+        "React Context", "Vercel", "TMDB API"
+      ],
+      "client": "Personal Project",
+      "link": "https://github.com/RaihanStark/movflix",
+      "demo": "https://movflix.byraihan.com"
     }
   ]
 }
