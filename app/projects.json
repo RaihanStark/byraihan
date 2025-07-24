@@ -51,37 +51,6 @@
       "client": "PT Ajita Indonesia",
       "link": "",
       "demo": ""
-    },
-    {
-      "id": "example-project-1",
-      "title": "Example Project 1",
-      "description": "This is a sample project to demonstrate the projects page functionality",
-      "thumbnail": "",
-      "image": "",
-      "date": "2024-01-15",
-      "tags": ["web", "react", "nextjs"],
-      "link": "https://github.com/yourusername/project1",
-      "demo": "https://project1.example.com"
-    },
-    {
-      "id": "example-project-2",
-      "title": "Example Project 2",
-      "description": "Another sample project with different technologies",
-      "thumbnail": "",
-      "image": "",
-      "date": "2024-02-20",
-      "tags": ["mobile", "react-native"],
-      "link": "https://github.com/yourusername/project2"
-    },
-    {
-      "id": "example-project-3",
-      "title": "Example Project 3",
-      "description": "A third sample project showcasing various features",
-      "thumbnail": "",
-      "image": "",
-      "date": "2024-03-10",
-      "tags": ["api", "nodejs", "express"],
-      "demo": "https://api.project3.example.com/docs"
     }
   ]
 }
