@@ -16,8 +16,7 @@
       ],
       "client": "Raven Restocks",
       "link": "",
-      "demo": "",
-      "hasCustomPage": true
+      "demo": ""
     },
     {
       "id": "local-caddie",
@@ -35,7 +34,6 @@
       "client": "Local Caddie",
       "link": "",
       "demo": "",
-      "hasCustomPage": true,
       "featured": false 
     },
     {
@@ -52,8 +50,7 @@
       ],
       "client": "PT Ajita Indonesia",
       "link": "",
-      "demo": "",
-      "hasCustomPage": true
+      "demo": ""
     },
     {
       "id": "example-project-1",

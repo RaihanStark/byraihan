@@ -12,7 +12,6 @@ export type Project = {
   demo?: string;
   technologies?: string[];
   client?: string;
-  hasCustomPage?: boolean;
   featured?: boolean;
 };
 
