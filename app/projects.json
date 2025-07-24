@@ -51,6 +51,22 @@
       "client": "PT Ajita Indonesia",
       "link": "",
       "demo": ""
+    },
+    {
+      "id": "mldspot",
+      "title": "MLDSpot: Loyalty Program",
+      "description": "Customer Loyalty Program from MLDSPOT Campaign. Built with simple jQuery Web Application and PHP Laravel as a back-end framework.",
+      "thumbnail": "/images/projects/mldspot/mldspot.png",
+      "image": "/images/projects/mldspot/mldspot.png",
+      "date": "2020-07-01",
+      "tags": ["javascript", "php", "jquery", "laravel", "loyalty"],
+      "technologies": [
+        "JavaScript", "PHP", "jQuery", "Bootstrap", 
+        "Sass", "Axios", "Laravel"
+      ],
+      "client": "PT Ajita Indonesia",
+      "link": "",
+      "demo": ""
     }
   ]
 }
