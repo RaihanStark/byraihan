@@ -6,7 +6,10 @@ export function Footer() {
       <div className="grow text-left">
         Raihan Yudo Saputra
       </div>
-      <div>
+      <div className="flex gap-3">
+        <A href="mailto:me@byraihan.com">
+          me@byraihan.com
+        </A>
         <A target="_blank" href="https://github.com/raihanstark">
           GitHub
         </A>
