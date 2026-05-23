@@ -152,7 +152,7 @@ export default async function Home() {
 
       <section className="mb-8">
         <div className="flex items-baseline justify-between mb-2">
-          <h2 className="font-bold dark:text-gray-100">Recent experience</h2>
+          <h2 className="font-bold dark:text-gray-100">Recent work experience</h2>
           <Link
             href="/experience"
             className="text-xs font-mono text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
