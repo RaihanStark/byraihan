@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import Image from "next/image";
 import type { Experience } from "../get-experience";
 
 function formatMonthYear(dateString: string) {
@@ -49,17 +50,34 @@ export function ExperienceList({ experience }: { experience: Experience[] }) {
               aria-hidden="true"
             />
             <article className="p-4 border rounded-lg border-gray-200 dark:border-gray-800">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
-                <div>
-                  <h2 className="text-lg font-semibold dark:text-gray-100">
-                    {item.role}
-                  </h2>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
-                    {item.company}
-                    {item.type ? ` · ${item.type}` : ""}
-                  </p>
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                <div className="flex items-start gap-3 min-w-0">
+                  <div className="relative w-12 h-12 shrink-0 rounded-md bg-gray-100 dark:bg-gray-800 overflow-hidden flex items-center justify-center border border-gray-200 dark:border-gray-800">
+                    {item.logo ? (
+                      <Image
+                        src={item.logo}
+                        alt={`${item.company} logo`}
+                        fill
+                        className="object-cover"
+                        sizes="48px"
+                      />
+                    ) : (
+                      <span className="text-base font-bold text-gray-500 dark:text-gray-400">
+                        {item.company.charAt(0)}
+                      </span>
+                    )}
+                  </div>
+                  <div className="min-w-0">
+                    <h2 className="text-lg font-semibold dark:text-gray-100">
+                      {item.role}
+                    </h2>
+                    <p className="text-sm text-gray-700 dark:text-gray-300">
+                      {item.company}
+                      {item.type ? ` · ${item.type}` : ""}
+                    </p>
+                  </div>
                 </div>
-                <div className="text-xs text-gray-500 dark:text-gray-400 sm:text-right">
+                <div className="text-xs text-gray-500 dark:text-gray-400 sm:text-right sm:shrink-0">
                   <div>
                     {formatMonthYear(item.startDate)} —{" "}
                     {isCurrent ? "Present" : formatMonthYear(item.endDate!)}

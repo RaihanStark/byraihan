@@ -1,86 +1,140 @@
 {
   "experience": [
     {
+      "id": "garde",
+      "role": "Software Engineer",
+      "company": "Garde",
+      "logo": "/images/companies/garde.png",
+      "location": "New York, United States · Remote",
+      "type": "Full-time",
+      "startDate": "2025-05-01",
+      "endDate": null,
+      "description": "Collaborating with the team at Munch Insights to build modern restaurant tools using React, Vue, and SvelteKit.",
+      "highlights": [
+        "Build modern web apps with React, Vue, and SvelteKit",
+        "Develop digital tools for restaurants, including scheduling and management systems",
+        "Focus on responsive design, speed, and good user experience",
+        "Collaborate with backend, design, and management teams to ship features quickly",
+        "Help improve and maintain existing codebases"
+      ],
+      "technologies": ["Vite", "React.js", "Vue.js", "Svelte", "Go"]
+    },
+    {
       "id": "raihan-software",
-      "role": "Founder & Software Engineer",
+      "role": "Software Engineer",
       "company": "Raihan Software",
       "logo": "/images/companies/raihan-software.png",
-      "location": "Remote",
+      "location": "Newark, Delaware, United States · Remote",
       "type": "Self-employed",
-      "startDate": "2024-01-01",
+      "startDate": "2023-12-01",
       "endDate": null,
-      "description": "Founded a sole proprietorship to fully commit to freelancing, handling everything from finances and client management to delivery of multiple concurrent client projects.",
+      "description": "Founded Raihan Software as a software house agency for small businesses around the world. From humble beginnings, every step has been fueled by a relentless commitment.",
       "highlights": [
-        "Built and shipped client SaaS products end-to-end",
-        "Managed full project lifecycle: scoping, delivery, billing",
-        "Maintained long-term client relationships originating from Upwork"
+        "Shipped Projectic — a task management platform for modern teams",
+        "Built YourAIBase — an AI web aggregator for discovering AI solutions",
+        "Delivered Raven Raffles 2.0 — a SaaS for bulk sneaker raffle entries"
       ],
-      "technologies": ["TypeScript", "Next.js", "React", "Node.js", "PostgreSQL"]
+      "technologies": [
+        "Software Design",
+        "Software Infrastructure",
+        "Next.js",
+        "Full-Stack Development"
+      ]
     },
     {
-      "id": "fintech-frontend",
-      "role": "Mid-level Front-end Engineer",
-      "company": "Enterprise Financial Technology Company",
-      "logo": "/images/companies/fintech.png",
-      "location": "Indonesia",
-      "type": "Full-time",
-      "startDate": "2022-01-01",
-      "endDate": "2024-01-01",
-      "description": "Worked as a mid-level front-end engineer at a 200-300 employee financial technology company alongside dozens of front-end engineers. Navigated the high compliance bar of fintech and a rigorous QA process at enterprise scale.",
-      "highlights": [
-        "Built scalable front-end features for enterprise fintech",
-        "Operated within strict financial compliance requirements",
-        "Leveled up through an intense QA and review process"
-      ],
-      "technologies": ["TypeScript", "React", "Next.js"]
-    },
-    {
-      "id": "upwork-freelance",
-      "role": "Freelance Software Engineer",
-      "company": "Upwork",
-      "logo": "/images/companies/upwork.png",
-      "location": "Remote",
-      "type": "Freelance",
-      "startDate": "2021-01-01",
-      "endDate": null,
-      "description": "Built a freelance reputation starting from small jobs and grew it into a primary source of clients. Most long-term clients today originated through Upwork.",
-      "highlights": [
-        "Grew profile from $5 jobs to long-term client engagements",
-        "Delivered web applications across multiple industries"
-      ],
-      "technologies": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js"]
-    },
-    {
-      "id": "first-fulltime",
+      "id": "tradelanes",
       "role": "Software Engineer",
-      "company": "First Full-time Role",
-      "logo": "",
-      "location": "Indonesia",
-      "type": "Full-time",
-      "startDate": "2020-01-01",
-      "endDate": "2022-01-01",
-      "description": "First full-time engineering role, landed without a formal degree by demonstrating capability through the technical interview.",
+      "company": "TradeLanes",
+      "logo": "/images/companies/tradelanes.png",
+      "location": "California, United States · Remote",
+      "type": "Part-time",
+      "startDate": "2024-04-01",
+      "endDate": "2025-01-01",
+      "description": "Built and maintained robust web scrapers and crawlers to automate vessel booking and schedule documentation for major shipping lines such as Maersk, CMA-CGM, Hapag-Lloyd, MSC, and ONE.",
       "highlights": [
-        "Hired without a degree based on demonstrated skill",
-        "Shipped production features as part of a small engineering team"
+        "Ensured high accuracy and timely data collection across multiple carriers",
+        "Automated vessel booking workflows previously done manually"
       ],
-      "technologies": ["JavaScript", "Python", "PHP"]
+      "technologies": [
+        "Python",
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "Playwright"
+      ]
     },
     {
-      "id": "fiverr-freelance",
-      "role": "Freelance Bot Developer",
-      "company": "Fiverr",
-      "logo": "/images/companies/fiverr.png",
-      "location": "Remote",
-      "type": "Freelance",
-      "startDate": "2018-01-01",
-      "endDate": "2020-01-01",
-      "description": "Started freelancing on Fiverr building automation tools, including a sneaker raffle bot that became my first paying gig as a developer.",
+      "id": "spe-solution",
+      "role": "Front-end Engineer",
+      "company": "SPE Solution",
+      "logo": "/images/companies/spe-solution.png",
+      "location": "Tangerang Selatan, Banten, Indonesia",
+      "type": "Full-time",
+      "startDate": "2022-05-01",
+      "endDate": "2023-12-01",
+      "description": "Involved in projects for a WhatsApp Business Solution Provider and a Financial Banking System, building enterprise-level Next.js applications with a large cross-functional team.",
       "highlights": [
-        "Built sneaker raffle automation tools for clients",
-        "Bootstrapped a career in software without prior professional experience"
+        "Initialized and developed web applications using Nuxt.js and Next.js",
+        "Set up internationalization (i18n) from scratch",
+        "Maintained Airbnb code quality standards with ESLint and Prettier",
+        "Implemented Role-Based Access Control using CASL and custom hooks",
+        "Worked alongside PMs, BAs, backend, UI/UX, scrum masters, and other front-end engineers",
+        "Styled with Material UI, Tailwind, and Styled Components",
+        "Implemented Redux and other state management solutions"
       ],
-      "technologies": ["Python", "Selenium", "Requests"]
+      "technologies": ["Next.js", "React.js", "TypeScript", "ESLint"]
+    },
+    {
+      "id": "ajita",
+      "role": "Frontend Developer",
+      "company": "AJITA",
+      "logo": "/images/companies/ajita.png",
+      "location": "Jakarta, Indonesia",
+      "type": "Full-time",
+      "startDate": "2020-03-01",
+      "endDate": "2021-10-01",
+      "description": "Worked as part of a team to build platforms for clients launching marketing campaigns for their brands and products.",
+      "highlights": [
+        "Worked directly with Back-end Engineers and UI/UX Designers",
+        "Developed UIs with Bootstrap and JavaScript DOM",
+        "Built web components with HTML/CSS/JS",
+        "Developed an Instagram platform admin panel with Python"
+      ],
+      "technologies": ["Front-End Development", "jQuery", "JavaScript", "React.js"]
+    },
+    {
+      "id": "raven-restocks",
+      "role": "Software Engineer",
+      "company": "Raven Restocks",
+      "logo": "/images/companies/raven-restocks.png",
+      "location": "London, UK · Remote",
+      "type": "Freelance",
+      "startDate": "2019-02-01",
+      "endDate": "2020-01-01",
+      "description": "Remotely worked at a UK-based startup providing a platform to get sneaker deals as an investment.",
+      "highlights": [
+        "Developed web applications using Python, Django, and Flask",
+        "Built bots using Selenium and Requests",
+        "Designed web architecture optimized for performance",
+        "Integrated Discord bots into the SaaS web application"
+      ],
+      "technologies": ["Python", "JavaScript", "Django", "Flask", "Selenium"]
+    },
+    {
+      "id": "juliana-jaya",
+      "role": "Software Engineer",
+      "company": "Juliana Jaya",
+      "logo": "/images/companies/juliana-jaya.png",
+      "location": "Jakarta, Indonesia",
+      "type": "Part-time",
+      "startDate": "2018-01-01",
+      "endDate": "2019-02-01",
+      "description": "Introduced the concept of online business, internet marketing, and the importance of having a website or platform for the company — earning trust and driving revenue.",
+      "highlights": [
+        "Defined the company's first online presence and web strategy",
+        "Built and launched the company's website"
+      ],
+      "technologies": ["Web Engineering", "React.js", "WordPress"]
     }
   ]
 }
