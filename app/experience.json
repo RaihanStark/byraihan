@@ -1,0 +1,86 @@
+{
+  "experience": [
+    {
+      "id": "raihan-software",
+      "role": "Founder & Software Engineer",
+      "company": "Raihan Software",
+      "logo": "/images/companies/raihan-software.png",
+      "location": "Remote",
+      "type": "Self-employed",
+      "startDate": "2024-01-01",
+      "endDate": null,
+      "description": "Founded a sole proprietorship to fully commit to freelancing, handling everything from finances and client management to delivery of multiple concurrent client projects.",
+      "highlights": [
+        "Built and shipped client SaaS products end-to-end",
+        "Managed full project lifecycle: scoping, delivery, billing",
+        "Maintained long-term client relationships originating from Upwork"
+      ],
+      "technologies": ["TypeScript", "Next.js", "React", "Node.js", "PostgreSQL"]
+    },
+    {
+      "id": "fintech-frontend",
+      "role": "Mid-level Front-end Engineer",
+      "company": "Enterprise Financial Technology Company",
+      "logo": "/images/companies/fintech.png",
+      "location": "Indonesia",
+      "type": "Full-time",
+      "startDate": "2022-01-01",
+      "endDate": "2024-01-01",
+      "description": "Worked as a mid-level front-end engineer at a 200-300 employee financial technology company alongside dozens of front-end engineers. Navigated the high compliance bar of fintech and a rigorous QA process at enterprise scale.",
+      "highlights": [
+        "Built scalable front-end features for enterprise fintech",
+        "Operated within strict financial compliance requirements",
+        "Leveled up through an intense QA and review process"
+      ],
+      "technologies": ["TypeScript", "React", "Next.js"]
+    },
+    {
+      "id": "upwork-freelance",
+      "role": "Freelance Software Engineer",
+      "company": "Upwork",
+      "logo": "/images/companies/upwork.png",
+      "location": "Remote",
+      "type": "Freelance",
+      "startDate": "2021-01-01",
+      "endDate": null,
+      "description": "Built a freelance reputation starting from small jobs and grew it into a primary source of clients. Most long-term clients today originated through Upwork.",
+      "highlights": [
+        "Grew profile from $5 jobs to long-term client engagements",
+        "Delivered web applications across multiple industries"
+      ],
+      "technologies": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js"]
+    },
+    {
+      "id": "first-fulltime",
+      "role": "Software Engineer",
+      "company": "First Full-time Role",
+      "logo": "",
+      "location": "Indonesia",
+      "type": "Full-time",
+      "startDate": "2020-01-01",
+      "endDate": "2022-01-01",
+      "description": "First full-time engineering role, landed without a formal degree by demonstrating capability through the technical interview.",
+      "highlights": [
+        "Hired without a degree based on demonstrated skill",
+        "Shipped production features as part of a small engineering team"
+      ],
+      "technologies": ["JavaScript", "Python", "PHP"]
+    },
+    {
+      "id": "fiverr-freelance",
+      "role": "Freelance Bot Developer",
+      "company": "Fiverr",
+      "logo": "/images/companies/fiverr.png",
+      "location": "Remote",
+      "type": "Freelance",
+      "startDate": "2018-01-01",
+      "endDate": "2020-01-01",
+      "description": "Started freelancing on Fiverr building automation tools, including a sneaker raffle bot that became my first paying gig as a developer.",
+      "highlights": [
+        "Built sneaker raffle automation tools for clients",
+        "Bootstrapped a career in software without prior professional experience"
+      ],
+      "technologies": ["Python", "Selenium", "Requests"]
+    }
+  ]
+}
